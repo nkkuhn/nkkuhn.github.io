@@ -887,6 +887,113 @@ footer p {
     }
 }
 
+/* Navigation */
+.navbar {
+    background-color: rgb(86, 2, 86) !important;
+    width: 100%;
+    padding: 0.75rem 1rem;
+}
+
+/* ---------- Desktop ---------- */
+
+.desktop-nav {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-group-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav-group-label {
+    color: rgba(254, 231, 253, 0.6);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.nav-submission-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    margin: 0;
+}
+
+.nav-submission-group .nav-link {
+    color: rgba(254, 231, 253, 0.8);
+    padding: 0;
+}
+
+.nav-submission-group .nav-link:hover {
+    color: white;
+}
+
+/* ---------- Mobile ---------- */
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 1029px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: none !important;
+    }
+
+    .mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar-brand {
+        color: white !important;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem 0 0;
+    }
+
+    .mobile-nav-links .nav-link {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 0.75rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-nav-links .nav-link:hover {
+        color: white;
+    }
+}
 /* Desktop Navigation - Hide on mobile */
 @media (max-width: 1029px) {
     #desktop-nav {

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Advent Pro"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent Pro"> 
     <!-- Other google fonts: Oswald, Montserrat, Questrial, Amatic SC, Antic Slab, Philosopher, Advent Pro, Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +15,8 @@
 
 
 <body>
-
     <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <!-- Desktop Navigation -->
         <div class="navbar-nav mx-auto desktop-nav" id="desktop-nav">
             <div class="nav-group-block">
@@ -31,35 +29,31 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
+        </div>
 
-            <!-- Mobile Navigation -->
-            <div class="container mobile-nav">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="navbar-brand mb-0 h1">Kühn Lab</span>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav"
-                        aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+        <!-- Mobile Navigation -->
+    <div class="mobile-nav container-fluid">
+        <div class="mobile-nav-header">
+            <span class="navbar-brand">Kühn Lab</span>
 
-                <div class="collapse navbar-collapse" id="mobile-nav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="research.html">Research</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="publications.html">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="people.html">People</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobileNavMenu"
+                    aria-controls="mobileNavMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+            <div class="collapse" id="mobileNavMenu">
+                <div class="mobile-nav-links">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="research.html">Research</a>
+                    <a class="nav-link" href="publications.html">Publications</a>
+                    <a class="nav-link" href="people.html">People</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -92,5 +86,6 @@
     <a href="https://github.com/whalesquash"> github.com/whalesquash </a>
 </p></div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

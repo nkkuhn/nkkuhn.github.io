@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Advent Pro"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent Pro"> 
     <!-- Other google fonts: Oswald, Montserrat, Questrial, Amatic SC, Antic Slab, Philosopher, Advent Pro, Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,7 @@
 
 <body>
     <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <!-- Desktop Navigation -->
         <div class="navbar-nav mx-auto desktop-nav" id="desktop-nav">
             <div class="nav-group-block">
@@ -30,69 +29,64 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
+        </div>
 
-            <!-- Mobile Navigation -->
-            <div class="container mobile-nav">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="navbar-brand mb-0 h1">Kühn Lab</span>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav"
-                        aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+        <!-- Mobile Navigation -->
+    <div class="mobile-nav container-fluid">
+        <div class="mobile-nav-header">
+            <span class="navbar-brand">Kühn Lab</span>
 
-                <div class="collapse navbar-collapse" id="mobile-nav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="research.html">Research</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="publications.html">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="people.html">People</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobileNavMenu"
+                    aria-controls="mobileNavMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+            <div class="collapse" id="mobileNavMenu">
+                <div class="mobile-nav-links">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="research.html">Research</a>
+                    <a class="nav-link" href="publications.html">Publications</a>
+                    <a class="nav-link" href="people.html">People</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-<div>
-    <p style="margin-left: 3em;margin-right: 3em;">
-    The lab is especially interested in dendrites. Dendrites are the tree-like structures through which neurons receive thousands of inputs. Rather than acting as passive cables, dendrites can filter, amplify, suppress, and combine incoming signals through their morphology and ion channels. We study how these dendritic computations influence the activity of defined neural circuits and help animals identify which signals are relevant.
-    </p>
-    <p style="margin-left: 3em;margin-right: 3em;">
-    To connect dendrites, circuits, and behavior, we combine molecular mapping, microscopy, slice electrophysiology, in vivo recordings, behavioral analysis, and computational modeling. We use genetic tools to target specific neuron types and manipulate selected ion channels, allowing us to follow how changes in membrane proteins and dendritic processing affect neural circuit dynamics and visually guided actions.
-    </p>
-    <p style="margin-left: 3em;margin-right: 3em;">
-    In the long term, we aim to build predictive models that link multiple scales of brain function: from ion channels and dendrites, to neurons, circuits, and behavior. This will help us understand how small cellular changes can lead to adaptive decisions or maladaptive responses, and may also inspire new ideas for energy-efficient computation based on the graded processing power of dendrites.
-    </p>
-</div>
 
-<div>
-<h2> Current Projects</h2>
-<ol> 
-	<li>
-        Role of HCN1 channels in wide-field neuron multiplexing
-        <br />
-        <img src="pics/WF neurons labeled.png" title="Labeled wide-field neurons of the superior colliculus" style="width:25em">
-        <br />
-    </li>
-    <li> 
-        Dendritic filtering of visual features
-        <p>
-        Investigating the role of local tuning has on feature processing in the colliculus.
+    <div>
+        <p style="margin-left: 3em;margin-right: 3em;">
+        To connect dendrites, circuits, and behavior, we combine molecular mapping, microscopy, slice electrophysiology, in vivo recordings, behavioral analysis, and computational modeling. We use genetic tools to target specific neuron types and manipulate selected ion channels, allowing us to follow how changes in membrane proteins and dendritic processing affect neural circuit dynamics and visually guided actions.
         </p>
-        <img src="pics/wide_field_local_stimulation.gif" title="Simulation of signal propagation of local inputs to a wide-field neuron." style="width:30em">
-    </li>
-</ol>
-</div>
+        <p style="margin-left: 3em;margin-right: 3em;">
+        In the long term, we aim to build predictive models that link multiple scales of brain function: from ion channels and dendrites, to neurons, circuits, and behavior. This will help us understand how small cellular changes can lead to adaptive decisions or maladaptive responses, and may also inspire new ideas for energy-efficient computation based on the graded processing power of dendrites.
+        </p>
+    </div>
 
+    <div>
+    <h2> Current Projects</h2>
+    <ol> 
+        <li>
+            Role of HCN1 channels in wide-field neuron multiplexing
+            <br />
+            <img src="pics/WF neurons labeled.png" title="Labeled wide-field neurons of the superior colliculus" style="width:25em">
+            <br />
+        </li>
+        <li> 
+            Dendritic filtering of visual features
+            <p>
+            Investigating the role of local tuning has on feature processing in the colliculus.
+            </p>
+            <img src="pics/wide_field_local_stimulation.gif" title="Simulation of signal propagation of local inputs to a wide-field neuron." style="width:30em">
+        </li>
+    </ol>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
