@@ -5,6 +5,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 246, 255);
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
 }
 
 div {
@@ -96,6 +99,10 @@ header {
     background-color: rgb(86, 2, 86) !important;
     padding: 1rem 10px;
     width: 100%;
+}
+
+body > nav:first-child {
+    margin-top: 0 !important;
 }
 
 /* Desktop navbar specific styles */
@@ -223,7 +230,6 @@ footer p {
 .navbar {
     background-color: rgb(86, 2, 86) !important;
     width: 100%;
-    padding: 0.75rem 1rem;
     margin: 0 !important;
     top: 0 !important;
 }
