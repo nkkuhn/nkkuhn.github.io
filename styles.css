@@ -389,7 +389,7 @@ footer p {
 /* Figure size on desktop */
 .sub-figure {
     width: 40%;
-    max-width: 700px;
+    max-width: 500px;
     height: auto;
 
 }
@@ -397,8 +397,8 @@ footer p {
 /* Figure size on mobile */
 @media (max-width: 1029px) {
     .sub-figure {
-        width: 90%;
-        max-width: 1029px;
+        width: 40%;
+        max-width: 700px;
     }
 }
 
@@ -412,7 +412,7 @@ footer p {
 /* Figure size on mobile */
 @media (max-width: 1029px) {
     .float-figure {
-        width: 90%;
-        max-width: 1029px;
+        width: 50%;
+        max-width: 700px;
     }
 }
