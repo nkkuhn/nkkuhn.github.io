@@ -387,7 +387,23 @@ footer p {
 }
 
 /* Figure size on desktop */
-.cv-figure {
+.sub-figure {
+    width: 40%;
+    max-width: 700px;
+    height: auto;
+
+}
+
+/* Figure size on mobile */
+@media (max-width: 1029px) {
+    .sub-figure {
+        width: 90%;
+        max-width: 1029px;
+    }
+}
+
+/* Figure size on desktop */
+.float-figure {
     width: 50%;
     float:left;
     margin: 1em;
@@ -395,7 +411,7 @@ footer p {
 
 /* Figure size on mobile */
 @media (max-width: 1029px) {
-    .cv-figure {
+    .float-figure {
         width: 90%;
         max-width: 1029px;
     }
